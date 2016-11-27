@@ -1,0 +1,10 @@
+C:\Users\Razor\Desktop\SE102_G12_13521053_13520974\Game_Mario_Bro3\MapEditor\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Razor\Desktop\SE102_G12_13521053_13520974\Game_Mario_Bro3\MapEditor\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\Razor\Desktop\SE102_G12_13521053_13520974\Game_Mario_Bro3\MapEditor\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\Razor\Desktop\SE102_G12_13521053_13520974\Game_Mario_Bro3\MapEditor\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Razor\Desktop\SE102_G12_13521053_13520974\Game_Mario_Bro3\MapEditor\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.AddObject.resources
+C:\Users\Razor\Desktop\SE102_G12_13521053_13520974\Game_Mario_Bro3\MapEditor\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\Razor\Desktop\SE102_G12_13521053_13520974\Game_Mario_Bro3\MapEditor\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Razor\Desktop\SE102_G12_13521053_13520974\Game_Mario_Bro3\MapEditor\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\Razor\Desktop\SE102_G12_13521053_13520974\Game_Mario_Bro3\MapEditor\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\Razor\Desktop\SE102_G12_13521053_13520974\Game_Mario_Bro3\MapEditor\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
