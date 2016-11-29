@@ -126,7 +126,7 @@ public:
 	~CWaveFile();
 
 	HRESULT Open(LPTSTR strFileName, WAVEFORMATEX* pwfx, DWORD dwFlags);
-	HRESULT Close();
+	//HRESULT Close();
 
 	HRESULT Read(BYTE* pBuffer, DWORD dwSizeToRead, DWORD* pdwSizeRead);
 	HRESULT Write(UINT nSizeToWrite, BYTE* pbData, UINT* pnSizeWrote);

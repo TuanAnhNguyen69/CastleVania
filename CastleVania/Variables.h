@@ -4,7 +4,7 @@
 #define FULL_SCREEN								0		// 0: Window, 1: Full Screen
 #define SCREEN_WIDTH							800
 #define SCREEN_HEIGHT							600
-#define GAME_TITLE								"Castle Vania"
+#define GAME_TITLE								"Mario Bros 3"
 #define OBJECT_WIDTH							50
 #define OBJECT_HEIGHT							50
 #define FRAME_NUMBER							120

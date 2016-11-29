@@ -25,6 +25,116 @@
     <Filter Include="Header Files\Objects">
       <UniqueIdentifier>{c564f354-2463-4132-96f7-c862e664dfd0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Map">
+      <UniqueIdentifier>{de2efee2-5ada-4af8-b015-b0a6e6895300}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Map">
+      <UniqueIdentifier>{2fde2f93-1679-45cc-809f-3b5b66a01b3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Objects\Ground">
+      <UniqueIdentifier>{293a2633-2dd6-4232-9d15-c9e614488109}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Objects\Enemy">
+      <UniqueIdentifier>{804a1e8b-fd0a-4947-9c10-54933c4b7a8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Objects\Item">
+      <UniqueIdentifier>{2fb2a9e9-d170-4c74-8706-bd7562304374}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Objects\Weapon">
+      <UniqueIdentifier>{b15e41a7-e7a0-451e-b1d7-55aeff8bb84c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Objects\Boss">
+      <UniqueIdentifier>{00e2aee7-a8a5-4bcd-b923-9aff4586c8aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Objects\Simon">
+      <UniqueIdentifier>{f4f14070-9a56-4f3d-bcb0-b02c7717ab3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Objects\Ground">
+      <UniqueIdentifier>{76478002-ac1c-4e4d-b1aa-c59f5228fb0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Objects\Enemy">
+      <UniqueIdentifier>{2fc0afa7-515a-4a26-b8b4-f772babc05c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Objects\Boss">
+      <UniqueIdentifier>{d59c040c-e5c0-4a90-921f-b1632e7edf0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Objects\Item">
+      <UniqueIdentifier>{d79a76a1-c97d-4be8-94eb-253147f05ca8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Objects\Weapon">
+      <UniqueIdentifier>{b67270e5-3426-48dd-be61-eb48f4aa65d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Objects\Other">
+      <UniqueIdentifier>{95d80640-2d15-44b9-889b-c021ca3c2fe4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Objects\Simon">
+      <UniqueIdentifier>{70a18468-f905-484a-9d31-1b1d1a94472a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Objects\Other">
+      <UniqueIdentifier>{1b801821-ff96-4884-90d0-887114b5125d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MainGame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation.cpp">
+      <Filter>Source Files\dxManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files\dxManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Collision.cpp">
+      <Filter>Source Files\dxManager</Filter>
+    </ClCompile>
+    <ClCompile Include="dxManager.cpp">
+      <Filter>Source Files\dxManager</Filter>
+    </ClCompile>
+    <ClCompile Include="GameTime.cpp">
+      <Filter>Source Files\dxManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Keyboard.cpp">
+      <Filter>Source Files\dxManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>Source Files\dxManager</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteManager.cpp">
+      <Filter>Source Files\dxManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Map.cpp">
+      <Filter>Source Files\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="QuadNode.cpp">
+      <Filter>Source Files\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Quadtree.cpp">
+      <Filter>Source Files\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="CastleVania.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Point.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Rectangle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseObject.cpp">
+      <Filter>Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="MovableObject.cpp">
+      <Filter>Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticObject.cpp">
+      <Filter>Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Source Files\Objects\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Item.cpp">
+      <Filter>Source Files\Objects\Item</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Animation.h">
@@ -48,61 +158,44 @@
     <ClInclude Include="Sprite.h">
       <Filter>Header Files\dxManager</Filter>
     </ClInclude>
+    <ClInclude Include="SpriteManager.h">
+      <Filter>Header Files\dxManager</Filter>
+    </ClInclude>
     <ClInclude Include="SweptAABB.h">
       <Filter>Header Files\dxManager</Filter>
     </ClInclude>
-    <ClInclude Include="dxaudio.h">
-      <Filter>Header Files\dxManager</Filter>
+    <ClInclude Include="Map.h">
+      <Filter>Header Files\Map</Filter>
     </ClInclude>
-    <ClInclude Include="Variables.h">
-      <Filter>Header Files\dxManager</Filter>
+    <ClInclude Include="QuadNode.h">
+      <Filter>Header Files\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Quadtree.h">
+      <Filter>Header Files\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="CastleVania.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Point.h">
-      <Filter>Header Files\Objects</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Rectangle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MovableObject.h">
+      <Filter>Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticObject.h">
       <Filter>Header Files\Objects</Filter>
     </ClInclude>
     <ClInclude Include="BaseObject.h">
       <Filter>Header Files\Objects</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Animation.cpp">
-      <Filter>Source Files\dxManager</Filter>
-    </ClCompile>
-    <ClCompile Include="Camera.cpp">
-      <Filter>Source Files\dxManager</Filter>
-    </ClCompile>
-    <ClCompile Include="Collision.cpp">
-      <Filter>Source Files\dxManager</Filter>
-    </ClCompile>
-    <ClCompile Include="dxaudio.cpp">
-      <Filter>Source Files\dxManager</Filter>
-    </ClCompile>
-    <ClCompile Include="dxManager.cpp">
-      <Filter>Source Files\dxManager</Filter>
-    </ClCompile>
-    <ClCompile Include="GameTime.cpp">
-      <Filter>Source Files\dxManager</Filter>
-    </ClCompile>
-    <ClCompile Include="Keyboard.cpp">
-      <Filter>Source Files\dxManager</Filter>
-    </ClCompile>
-    <ClCompile Include="Sprite.cpp">
-      <Filter>Source Files\dxManager</Filter>
-    </ClCompile>
-    <ClCompile Include="Variables.cpp">
-      <Filter>Source Files\dxManager</Filter>
-    </ClCompile>
-    <ClCompile Include="Point.cpp">
-      <Filter>Source Files\Objects</Filter>
-    </ClCompile>
-    <ClCompile Include="Rectangle.cpp">
-      <Filter>Source Files\Objects</Filter>
-    </ClCompile>
-    <ClCompile Include="BaseObject.cpp">
-      <Filter>Source Files\Objects</Filter>
-    </ClCompile>
+    <ClInclude Include="Enemy.h">
+      <Filter>Header Files\Objects\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.h">
+      <Filter>Header Files\Objects\Item</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

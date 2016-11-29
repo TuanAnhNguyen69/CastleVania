@@ -42,7 +42,7 @@ public:
 	static BaseObject* Create(int x, int y, int width, int height);
 	virtual void Run();
 	virtual void Draw();
-	virtual void setObjectFromID();
+	void setObjectFromID();
 	BaseObject* oldObj;
 	void SetPosition(Point pos);
 	void SetPosition(int x, int y);
