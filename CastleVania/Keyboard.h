@@ -12,7 +12,7 @@ class Keyboard
 	Keyboard(HINSTANCE hInstance, HWND hWnd);
 	static Keyboard* instance;
 public:
-	static Keyboard* getInstance();
+	static Keyboard* GetInstance();
 	static void Create(HINSTANCE hInstance, HWND hWnd);
 	~Keyboard();
 	void UpdateKeyboard();

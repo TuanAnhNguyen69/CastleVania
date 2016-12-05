@@ -13,11 +13,11 @@
 enum CollisionType
 {
 	CollGround,
-	CollMario,
+	CollSimon,
 	CollEnemy,
-	CollTail,
+	CollWeapon,
 	CollItem,
-	CollLine,
+	CollStair,
 	CollDie
 };
 class BaseObject
@@ -31,7 +31,7 @@ public:
 	int _width, _height; // do dai, do cao of hinh
 	Point _position; //vi tri cua hinh
 	int _curAction; // 
-	float vx, vy, ax, ay, dx, dy;
+	float vx, vy,dx, dy;
 	int oldX, oldY;
 	bool c;
 	CollisionType _collType;

@@ -27,7 +27,7 @@ Keyboard::Keyboard(HINSTANCE hInstance, HWND hWnd)
 		_keyStates[i] = 0x00;
 	}
 }
-Keyboard* Keyboard::getInstance()
+Keyboard* Keyboard::GetInstance()
 {
 	return instance;
 }

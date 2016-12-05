@@ -7,6 +7,6 @@ int WINAPI WinMain(HINSTANCE hInstance,
  {
 	CastleVania *_game = new CastleVania();
 	_game->Init(hInstance);
-	_game->Run();
+	_game->run();
 	return 1;
 }

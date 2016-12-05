@@ -26,7 +26,7 @@ public:
 	DWORD GetGameTime();
 	DWORD GetTickPerFrame();
 	void Release();
-	static GameTime* getInstance(float fps = 0);
+	static GameTime* GetInstance(float fps = 0);
 
 
 	static GameTime *Create(float fps);

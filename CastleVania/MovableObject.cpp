@@ -6,11 +6,6 @@ MovableObject::MovableObject() :BaseObject()
 	vy = 0;
 	dx = 0;
 	dy = 0;
-	if (_collType == CollGround)
-	{
-		ay = 0;
-	}
-	ay = GRAVITY;
 	vyJump = -0.4;
 	_timeDelay = new GameTime(8); //8 frame/s
 }
@@ -51,17 +46,12 @@ void MovableObject::Draw()
 
 }
 
-void MovableObject::Run()
+void MovableObject::run()
 {
 	if (_alive)
 	{
-		vx += Gametime*ax;
-		vy += Gametime*ay;
-
-		dx = (int)(vx*Gametime);
-		dy = (int)(vy*Gametime);
-		if (dy == 0) // không cho mario đi khi nhảy
-			dy = 1;
+		dx += vx;
+		dy +=vy;
 		normalx = 0;
 		normaly = 0;
 		UpdateAnimation();
@@ -72,11 +62,11 @@ void MovableObject::Run()
 
 void MovableObject::UpdatePosition()
 {
-	if (_collType == CollMario)
+	if (_collType == CollSimon)
 		int a = 5;
 	if (c) // nếu có va chạm chéo thì sẽ cập nhật lại 1 trong 2 vecto
 	{
-		if (_collType == CollMario)
+		if (_collType == CollSimon)
 			int a = 5;
 		if (abs(dx) > abs(dy))
 			dy = 0;
@@ -86,6 +76,8 @@ void MovableObject::UpdatePosition()
 
 	_position.X += dx;
 	_position.Y += dy;
+	dx = 0;
+	dy = 0;
 	//BaseObject::UpdatePosition();
 }
 

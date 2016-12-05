@@ -14,11 +14,11 @@ protected:
 public:
 	Enemy();
 	void OnCollision(BaseObject* obj, int nx, int ny);
-	void OnInterSerct(BaseObject* obj);
+	void onInterSerct(BaseObject* obj);
 	virtual void Attacked();
 	bool _canAttMario;
 	void Draw();
-	void Run();
+	void run();
 	~Enemy();
 };
 

@@ -135,6 +135,15 @@
     <ClCompile Include="Item.cpp">
       <Filter>Source Files\Objects\Item</Filter>
     </ClCompile>
+    <ClCompile Include="Simon.cpp">
+      <Filter>Source Files\Objects\Simon</Filter>
+    </ClCompile>
+    <ClCompile Include="SimonWeapon.cpp">
+      <Filter>Source Files\Objects\Simon</Filter>
+    </ClCompile>
+    <ClCompile Include="Ground.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Animation.h">
@@ -196,6 +205,15 @@
     </ClInclude>
     <ClInclude Include="Item.h">
       <Filter>Header Files\Objects\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Simon.h">
+      <Filter>Header Files\Objects\Simon</Filter>
+    </ClInclude>
+    <ClInclude Include="SimonWeapon.h">
+      <Filter>Header Files\Objects\Simon</Filter>
+    </ClInclude>
+    <ClInclude Include="Ground.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

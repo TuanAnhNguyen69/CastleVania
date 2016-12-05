@@ -119,7 +119,7 @@ float Collision::sweptAABB(BaseObject * b1, BaseObject * b2, int& normalx, int& 
 }
 void Collision::PreventMove(BaseObject* b1, BaseObject* b2, int nx, int ny)
 {
-	if (b1->_collType == CollMario)
+	if (b1->_collType == CollSimon)
 		int a = 5;
 	if (b2->id>6 && b2->id < 12)
 		b1->c = true;
@@ -133,7 +133,6 @@ void Collision::PreventMove(BaseObject* b1, BaseObject* b2, int nx, int ny)
 			if (nx != 0)
 			{
 				b1->vx = 0;
-				b1->ax = 0;
 			}
 			
 		}
@@ -143,7 +142,6 @@ void Collision::PreventMove(BaseObject* b1, BaseObject* b2, int nx, int ny)
 			if (nx != 0)
 			{
 				b1->vx = 0;
-				b1->ax = 0;
 			}
 		}
 
@@ -218,7 +216,7 @@ void Collision::CollisionLine(BaseObject* b1, BaseObject* b2, int nx, int ny)
 	//b1->normaly = 0;
 	//if (AABBCheck(b1, b2))
 	//	return;
-	if (b1->_collType == CollMario)
+	if (b1->_collType == CollSimon)
  		int a = 5;
 	b1->c = false;
 	if (b1->Left()<b2->Right() && b1->Right()>b2->Left())

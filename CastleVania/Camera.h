@@ -17,7 +17,6 @@ private:
 	vector<BaseObject*> ListItem;
 
 public:
-	bool canUp;
 	static Camera* GetInstance();
 	void Init(int, int, int, int);
 	void InitPlayer(BaseObject *p);

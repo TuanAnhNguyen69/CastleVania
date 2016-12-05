@@ -28,7 +28,7 @@ public:
 	void setAction(int action);
 	virtual void Update(GameTime *);
 	virtual void Draw();
-	virtual void Run();
+	virtual void run();
 	virtual void UpdatePosition(); //cap nhat vi tri cua vat
 	virtual void UpdateAnimation(); // cap nhat animation
 	

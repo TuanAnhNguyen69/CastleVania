@@ -10,9 +10,9 @@ void Item::Draw()
 {
 	MovableObject::Draw();
 }
-void Item::Run()
+void Item::run()
 {
-	MovableObject::Run();
+	MovableObject::run();
 }
 
 void Item::Active()
@@ -23,12 +23,12 @@ void Item::Active()
 
 void Item::OnCollision(BaseObject* obj, int nx, int ny)
 {
-	if (obj->_collType == CollMario)
+	if (obj->_collType == CollSimon)
 		this->_alive = false;
 }
-void Item::OnInterSerct(BaseObject* obj)
+void Item::onInterSerct(BaseObject* obj)
 {
-	if (obj->_collType == CollMario)
+	if (obj->_collType == CollSimon)
 		this->_alive = false;
 }
 

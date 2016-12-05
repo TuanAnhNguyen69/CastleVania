@@ -53,7 +53,7 @@ void Camera::AddObjectToListCol()
 		switch (o->_collType)
 		{
 		case CollEnemy:
-		case CollTail:
+	case CollWeapon:
 			allowAdd = true;
 			for each(BaseObject* o2 in ListEnemy)
 			{
@@ -67,7 +67,7 @@ void Camera::AddObjectToListCol()
 				ListEnemy.push_back(o);
 			break;
 		case CollGround:
-		case CollLine:
+		case CollStair:
 			allowAdd = true;
 			for each(BaseObject* o2 in ListGround)
 			{
@@ -102,7 +102,6 @@ void Camera::UpdatePosition()
 {
 	_position.X += dx;
 	_position.Y += dy;
-	canUp = false;
 }
 void Camera::ImportObject(vector<BaseObject*> listObj)
 {
@@ -158,7 +157,7 @@ void Camera::CameraRun()
 		player->dx = 0;
 	}
 
-	if ((player->_position.Y + player->dy > y && player->dy > 0) || (player->_position.Y + player->dy < y && player->dy < 0 && canUp))
+	if ((player->_position.Y + player->dy > y && player->dy > 0) || (player->_position.Y + player->dy < y && player->dy < 0))
 	{
 		dy = player->dy;
 	}

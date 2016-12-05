@@ -6,8 +6,8 @@ public:
 	Item();
 	void Draw();
 	void OnCollision(BaseObject* obj, int nx, int ny);
-	void OnInterSerct(BaseObject* obj);
-	void Run();
+	void onInterSerct(BaseObject* obj);
+	void run();
 	virtual void Active();
 	~Item();
 };

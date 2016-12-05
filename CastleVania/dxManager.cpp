@@ -359,6 +359,7 @@ bool DXTexture::LoadTexture(char *filename, D3DCOLOR color)
 {
 	HRESULT result;
 
+
 	result = D3DXGetImageInfoFromFile(filename, &_info);
 	if (result != D3D_OK)
 	{

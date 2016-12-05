@@ -50,7 +50,7 @@ DWORD GameTime::GetDeltaTime()
 
 
 GameTime* GameTime::instance = 0;
-GameTime * GameTime::getInstance(float fps)
+GameTime * GameTime::GetInstance(float fps)
 {
 	if (!instance)
 		instance = Create(fps);

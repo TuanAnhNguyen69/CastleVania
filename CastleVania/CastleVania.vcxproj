@@ -145,6 +145,7 @@
     <ClCompile Include="dxManager.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="GameTime.cpp" />
+    <ClCompile Include="Ground.cpp" />
     <ClCompile Include="Item.cpp" />
     <ClCompile Include="Keyboard.cpp" />
     <ClCompile Include="MainGame.cpp" />
@@ -154,6 +155,8 @@
     <ClCompile Include="QuadNode.cpp" />
     <ClCompile Include="Quadtree.cpp" />
     <ClCompile Include="Rectangle.cpp" />
+    <ClCompile Include="Simon.cpp" />
+    <ClCompile Include="SimonWeapon.cpp" />
     <ClCompile Include="Sprite.cpp" />
     <ClCompile Include="SpriteManager.cpp" />
     <ClCompile Include="StaticObject.cpp" />
@@ -167,6 +170,7 @@
     <ClInclude Include="dxManager.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="GameTime.h" />
+    <ClInclude Include="Ground.h" />
     <ClInclude Include="Item.h" />
     <ClInclude Include="Keyboard.h" />
     <ClInclude Include="Map.h" />
@@ -175,6 +179,8 @@
     <ClInclude Include="QuadNode.h" />
     <ClInclude Include="Quadtree.h" />
     <ClInclude Include="Rectangle.h" />
+    <ClInclude Include="Simon.h" />
+    <ClInclude Include="SimonWeapon.h" />
     <ClInclude Include="Sprite.h" />
     <ClInclude Include="SpriteManager.h" />
     <ClInclude Include="StaticObject.h" />

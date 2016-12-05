@@ -12,14 +12,14 @@ void Enemy::OnCollision(BaseObject* obj, int nx, int ny)
 	//if (obj == MarioCharacter::GetInstance())
 	//	return;
 
-	if (obj->_collType != CollItem && obj->_collType != CollLine)
+	if (obj->_collType != CollItem && obj->_collType != CollGround)
 	{
 
 		Collision::PreventMove(this, obj, nx, ny);
 	}
-	if (obj->_collType == CollLine)
+	if (obj->_collType == CollGround)
 		Collision::CollisionLine(this, obj, nx, ny);
-	if (nx != 0 && Bottom() > obj->Top() && obj->_collType!=CollLine)
+	if (nx != 0 && Bottom() > obj->Top() && obj->_collType!=CollGround)
 	{
 		_direction = (Direction)(-_direction);
 		dx = -dx;
@@ -32,9 +32,9 @@ void Enemy::Attacked()
 {
 	
 }
-void Enemy::OnInterSerct(BaseObject* obj)
+void Enemy::onInterSerct(BaseObject* obj)
 {
-	if (obj->_collType == CollTail)
+	if (obj->_collType == CollWeapon)
 	{
 		Dead();
 	}
@@ -86,9 +86,9 @@ void Enemy::Draw()
 		_listAction->get(_curAction)->_dxGame.GetSprite()->SetTransform(&b);
 }
 
-void Enemy::Run()
+void Enemy::run()
 {
-	MovableObject::Run();
+	MovableObject::run();
 }
 Enemy::~Enemy()
 {

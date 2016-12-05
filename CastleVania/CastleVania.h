@@ -24,7 +24,7 @@ public:
 	CastleVania();
 	bool Init(HINSTANCE);
 	void GameInit();
-	void Run();
+	void run();
 	void End();
 	void Update();
 	void Draw();

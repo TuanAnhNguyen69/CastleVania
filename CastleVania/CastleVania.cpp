@@ -5,13 +5,13 @@ CastleVania::CastleVania() :DirectXGame()
 }
 void CastleVania::GameInit()
 {
-	Camera::GetInstance()->Init(16, 2380, 260, 196);
-	Camera::GetInstance()->oldX = 16;
-	Camera::GetInstance()->oldY = 2380;
+	Camera::GetInstance()->Init(1790,622, 256, 178);
+	Camera::GetInstance()->oldX = 1790;
+	Camera::GetInstance()->oldY = 622;
 	bg = new Map(this);
 	//InitSound();
 	SpriteManager::GetInstance(this);
-	//Camera::GetInstance()->InitPlayer(MarioCharacter::GetInstance());
+	Camera::GetInstance()->InitPlayer(Simon::GetInstance());
 	bg->LoadResource();
 }
 
@@ -33,7 +33,7 @@ bool CastleVania::Init(HINSTANCE hInstance)
 	return true;
 }
 
-void CastleVania::Run()
+void CastleVania::run()
 {
 	MSG msg;
 	while (true)
@@ -45,8 +45,8 @@ void CastleVania::Run()
 			if (msg.message == WM_QUIT)
 				return;
 		}
-		Keyboard::getInstance()->PollKeyboard();
-		Keyboard::getInstance()->UpdateKeyboard();
+		Keyboard::GetInstance()->PollKeyboard();
+		Keyboard::GetInstance()->UpdateKeyboard();
 			Update();
 
 			if (this->BeginScene())
@@ -68,23 +68,22 @@ void CastleVania::Run()
 void CastleVania::Update()
 {
 
-	//MarioCharacter::GetInstance()->Run();
+	Simon::GetInstance()->run();
 	Camera::GetInstance()->CameraRun();
-	bg->Run();
+	bg->run();
 	Camera::GetInstance()->UpdatePosition();
-	//MarioCharacter::GetInstance()->UpdatePosition();
+	Simon::GetInstance()->UpdatePosition();
 
 
-	/*if (MarioCharacter::GetInstance()->_isDead)
+	if (Simon::GetInstance()->_isDead)
 	{
-		MarioCharacter::_life--;
-		MarioCharacter::GetInstance()->_isDead = false;
-		MarioCharacter::GetInstance()->_position.X = MarioCharacter::GetInstance()->oldX;
-		MarioCharacter::GetInstance()->_position.Y = MarioCharacter::GetInstance()->oldY;
+		Simon::_life--;
+		Simon::GetInstance()->_isDead = false;
+		Simon::GetInstance()->_position.X = Simon::GetInstance()->oldX;
+		Simon::GetInstance()->_position.Y = Simon::GetInstance()->oldY;
 		Camera::GetInstance()->_position.X = Camera::GetInstance()->oldX;
 		Camera::GetInstance()->_position.Y = Camera::GetInstance()->oldY;
-		MarioCharacter::GetInstance()->SetType(SMALL_MARIO);
-	}*/
+	}
 
 }
 
@@ -93,18 +92,13 @@ void CastleVania::Draw()
 	bg->Draw();
 	char b[20];
 
-	//PrintText("$", 10, 10, 10, D3DCOLOR_XRGB(0, 0, 0));
-	//PrintText((itoa(MarioCharacter::GetInstance()->_coincount, b, 10)), 10, 20, 10, D3DCOLOR_XRGB(0, 0, 0));
-	//PrintText("M", 10, 10, 20, D3DCOLOR_XRGB(0, 0, 0));
-	//PrintText((itoa(MarioCharacter::GetInstance()->_life, b, 10)), 10, 20, 20, D3DCOLOR_XRGB(0, 0, 0));
-	//if (MarioCharacter::GetInstance()->_life < 0)
-	//{
-	//	//MarioCharacter::GetInstance()->_life = 0;
-	//	PrintText("GameOver", 20, 100, 80, D3DCOLOR_XRGB(0, 0, 0));
-	//	MarioCharacter::GetInstance()->vx = 0;
-	//	MarioCharacter::GetInstance()->vy = 0;
-	//	MarioCharacter::GetInstance()->ay = 0;
-	//	MarioCharacter::GetInstance()->_curAction = MarioDie;
-	//}
-	//MarioCharacter::GetInstance()->Draw();
+	if (Simon::GetInstance()->_life < 0)
+	{
+		Simon::GetInstance()->_life = 0;
+		PrintText("GameOver", 20, 100, 80, D3DCOLOR_XRGB(255, 255, 255));
+		Simon::GetInstance()->vx = 0;
+		Simon::GetInstance()->vy = 0;
+		Simon::GetInstance()->_curAction = SimonDie;
+	}
+	Simon::GetInstance()->Draw();
 }
